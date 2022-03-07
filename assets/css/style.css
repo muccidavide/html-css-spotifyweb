@@ -73,13 +73,37 @@ img{
     align-items: center;
 }
 
-.c-center{
+.cl-center{
 padding: 5px;
 }
-.c-left > img{
+
+.cl-left > img{
     width: 50px;
     height: auto;
+}
 
+.col-center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.controls,
+.time-bar{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 0.3rem;
+}
+
+.controls > i {
+    margin: 0 3%;
+}
+
+.slider-song{
+    width: 60%;
 }
 
 
