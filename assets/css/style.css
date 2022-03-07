@@ -80,8 +80,8 @@ body {
 .side-flex>img {
     width: 2rem;
     margin-right: 0.5rem;
-    filter: brightness(0.5);
 }
+
 
 /* PLaylist */
 .playlist {
@@ -269,9 +269,6 @@ span [class$="hover-color"]:hover {
 
 /* .home:hover .home>img,
 .search:hover .search>img, */
-.library:hover .library>img {
-    filter: brightness(1);
-}
 
 .new-playlist:hover .plus {
     background-color: var(--text-hoover);
