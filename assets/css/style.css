@@ -1,0 +1,19 @@
+:root {
+    --bg-primary: #080B12;
+    --bg-secondary: #282828;
+    --bg-footer: #5A5A5A;
+    --text-primary: #717171;
+    --text-lighter: #7D7F84;
+    --text-selection: #ADFF2F;
+    --text-hoover: #FBFBFB;
+    --text-secondary: #FFFFFF;
+
+}
+
+/* General */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
