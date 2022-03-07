@@ -38,6 +38,10 @@ body{
     height: 5px;
 }
 
+.p-rel{
+    position: relative;
+}
+
 
 /* #region Main */
 
@@ -90,6 +94,33 @@ body{
 .name-playlist{
     margin-top: 1.5rem;
 }
+
+.user-box{
+    position: absolute;
+    bottom: 0;
+    z-index: 2;
+    background-color: var(--bg-secondary);
+}
+.app-down{
+    border-bottom: 1px solid var(--text-primary);
+}
+
+.app-down,
+.user{
+    padding: 0.5rem 0;
+}
+.app-down img{
+width: 1rem;
+}
+
+.user > img{
+    width: 1.5rem;
+    background-color: var(--text-primary);
+    border-radius: 50%;
+}
+
+
+
 
 /* Display */
 
