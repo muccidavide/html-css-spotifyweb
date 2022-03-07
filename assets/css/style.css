@@ -1,7 +1,7 @@
 :root {
-    --bg-primary: #080B12;
-    --bg-secondary: #282828;
-    --bg-footer: #5A5A5A;
+    --bg-primary: #141922;
+    --bg-secondary: #000000;
+    --bg-footer: #282828;
     --text-primary: #717171;
     --text-lighter: #7D7F84;
     --text-selection: #ADFF2F;
@@ -17,3 +17,39 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+/* Utility */
+
+.flx{
+    display: flex;
+}
+
+
+/* #region Main */
+
+.sidebar{
+    width:230px;
+    height: calc(100vh - 90px);
+    background-color: var(--bg-secondary);
+}
+
+.display{
+    width: calc(100% - 230px);
+    background-color: var(--bg-primary);
+    height: calc(100vh - 90px);
+}
+
+/* #endregion Main */
+
+/* #region Footer */
+
+.btm-bar{
+    background-color: var(--bg-footer);
+    height: 90px;
+    position: fixed;
+    width: 100%;
+}
+
+
+
+/* #endregion Footer */
