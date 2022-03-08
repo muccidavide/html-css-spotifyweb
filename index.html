@@ -20,12 +20,13 @@
     <main id="main_site">
         <div class="container-main">
             <aside class="sidebar sub-title p-rel">
+
                 <div class="logo">
                     <img src="./assets/img/logo.svg" alt="spotify logo">
                 </div>
 
                 <div class="home side-flex hover-color">
-                    
+
                     <img id="home" src="./assets/img/home.svg" alt="homepage">
                     <span>
                         Home
@@ -34,20 +35,21 @@
                 </div>
 
                 <div class="search side-flex hover-color">
-                    <img  src="./assets/img/search.svg" alt="search">
+                    <img id="search" src="./assets/img/search.svg" alt="search">
                     <span>
                         Cerca
                     </span>
 
                 </div>
                 <div id="library" class="library side-flex hover-color">
-                    <img src="./assets/img/libreria.svg" alt="library">
+                    <img id="library" src="./assets/img/libreria.svg" alt="library">
                     <span>
                         Libreria
                     </span>
                 </div>
+
                 <section class="playlist">
-                    <h3>Playlist</h3>
+                    <h3 class="title">Playlist</h3>
                     <div class="new-playlist side-flex hover-color">
                         <div class="plus">
                             <i class="fa-solid fa-plus fa-lg"></i>
@@ -73,7 +75,7 @@
                         <div class="name-playlist hover-color">
                             Nome playlist
                         </div>
-                        <div class="name-playlist">
+                        <div class="name-playlist hover-color">
                             Nome playlist
                         </div>
                         <div class="name-playlist hover-color">
@@ -83,9 +85,11 @@
                     </div>
 
                 </section>
+                <!-- /playlist section -->
+
                 <div class="user-box">
                     <div class="app-down side-flex hover-color">
-                        <img src="./assets/img/download.svg" alt="download">
+                        <img id="download-btn" src="./assets/img/download.svg" alt="download">
                         <span>Installa app</span>
                     </div>
                     <div class="user side-flex title">
@@ -117,15 +121,46 @@
                         <li>scopri</li>
                     </ul>
                 </nav>
-                <main class="container-display">
-                    <div class="card square"></div>
-                    <div class="card square"></div>
-                    <div class="card square"></div>
-                    <div class="card square"></div>
-                    <div class="card square"></div>
-                    <div class="card square"></div>
+                <section class="container-display">
+                    <div class="played">
+                        <h2 class="title">Recently played</h2>
+                    </div>
 
-                </main>
+
+                    <div class="card">
+                        <div class="card-cover">
+                            <img src="./assets/img/metal_lifting.jpg" alt="heavy metal playlist albums cover">
+                            <div class="card-text">
+                                <h3 class="title">Heavy Metal</h3>
+                                <span class="t-lighter">Subtitle</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-cover">
+                            <img src="./assets/img/stranger.jpeg" alt="heavy metal playlist albums cover">
+                            <div class="card-text">
+                                <h3 class="title">Stranger Things, VOL 1 (a Netflix Original Series Soundtrack)</h3>
+                                <span class="t-lighter">Subtitle</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="card-cover">
+                            <img src="./assets/img/metal_lifting.jpg" alt="heavy metal playlist albums cover">
+                            <div class="card-text">
+                                <h3 class="title">Heavy Metal</h3>
+                                <span class="t-lighter">Subtitle</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                </section>
 
 
             </div>
@@ -137,7 +172,7 @@
 
     <footer id="footer_site">
         <div class="btm-bar">
-            <div class="col-left">
+            <div class="col-left f-small">
                 <div class="cl-left">
                     <img src="./assets/img/sinister.jpeg" alt="sinister album">
 
@@ -165,20 +200,26 @@
                     <i class="fa-solid fa-rotate-right fa-lg"></i>
 
                 </div>
-                <div class="time-bar title">
-                    <span>0:25</span>
-                    <input class="slider song-slider" type="range">
-                    <span>4:35</span>
+                <div class="time-bar title side-flex">
+                    <div>0:25</div>
+                    <!-- <input class="slider song-slider" type="range"> -->
 
+                    <div class="slider play-slider p-rel">
+                        <div class="slider light-slider"></div>
+                    </div>
+                    <div>4:35</div>
                 </div>
 
             </div>
             <!-- /.col-center -->
             <div class="col-right title">
-                <i class="fa-solid fa-list fa-lg"></i>
-                <i class="fa-solid fa-desktop fa-lg"></i>
-                <i class="fa-solid fa-volume-high fa-lg"></i>
-                <input class="slider volume-slider" type="range">
+                <i class="fa-solid fa-list"></i>
+                <i class="fa-solid fa-desktop"></i>
+                <i class="fa-solid fa-volume-high"></i>
+                <div class="slider play-slider p-rel">
+                    <div class="slider light-slider"></div>
+                </div>
+
 
             </div>
             <!-- /.col-right -->
