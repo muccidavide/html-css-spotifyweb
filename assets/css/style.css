@@ -6,7 +6,7 @@
     --text-primary: #717171;
     --text-lighter: #7D7F84;
     --text-selection: #ADFF2F;
-    --text-hoover: #FBFBFB;
+    --text-hover: #FBFBFB;
     --text-secondary: #FFFFFF;
 
 }
@@ -171,13 +171,20 @@ body {
 
 .upgrade-btn {
     position: absolute;
-    right: 3rem;
+    right: -5%;
     top: 50%;
-    transform: translateY(-50%);
+    transform: translate(-50%, -50%);
     border: solid white;
     padding: 0.7rem 2.5rem;
     border-radius: 30px;
     text-transform: uppercase;
+    transition: all 1s;
+}
+
+.upgrade-btn:hover{
+    font-size: medium;
+    right: -6%;
+    
 }
 
 .box{
@@ -206,6 +213,16 @@ body {
     text-transform: uppercase;
 }
 
+.green{
+    border: solid thin var(--text-selection);
+    width: 30%;
+    text-align: center;
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 .card{
     width: 15%;
     text-align: center;
@@ -220,13 +237,28 @@ body {
     line-height: 1.5rem;
     margin-top: 0.8rem;
 }
+.play-input{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    visibility: hidden;
+}
+
+.card:hover .play-input{
+    visibility: visible;
+}
+
+.card:hover .card-cover>img{
+    filter: brightness(0.7);
+}
 
 .container-display {
     display: flex;
     flex-wrap: wrap;
     row-gap: 2%;
     column-gap: 2%;
-    margin: 2rem 0;
+    margin: 2rem 1rem 2rem 0;
 }
 
 .played{
@@ -281,10 +313,11 @@ body {
     width: 100%;
     margin: auto;
     text-align: center;
-    padding: 0.3rem;
     column-gap: 2%;
     justify-content: center;
+    height: 30px;
 }
+
 
 
 .col-left>div,
@@ -293,8 +326,31 @@ body {
     margin: 0 10px;
 }
 
+/* .controls>i,
+.controls>div{
+    width: 2%;
+} */
+
+.cl-center:hover .song-name{
+    border-bottom: solid thin var(--text-hover);
+    
+}
 .cl-right>i {
     margin-right: 5px;
+}
+
+
+.zoom:hover {
+    font-size: 2rem;
+}
+
+.play{
+    width: 30px;
+}
+
+#heart:hover,
+#folder:hover{
+    color: var(--text-hover);
 }
 
 .play-slider {
@@ -304,12 +360,38 @@ body {
 
 .light-slider {
     width: 20%;
-    background-color: var(--text-hoover);
+    background-color: var(--text-hover);
     position: absolute;
     left: 0;
     top: 0;
 
 }
+
+.point-box{
+height: 100%;
+}
+
+.point-slider{
+
+    border-radius: 50%;
+    background-color: var(--text-hover);
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    display: none;    
+}
+
+.play-slider:hover .light-slider{
+    background-color: var(--text-selection);
+}
+
+.play-slider:hover .point-slider{
+    display: block;
+}
+
 
 .slider {
     height: 5px;
@@ -321,8 +403,9 @@ body {
 /* Hoover Rules */
 
 div[class$="hover-color"]:hover,
-span [class$="hover-color"]:hover {
-    color: var(--text-hoover);
+span[class$="hover-color"]:hover,
+li[class$="hover-color"]:hover {
+    color: var(--text-hover);
 }
 
 .home:hover #home,
@@ -332,6 +415,6 @@ span [class$="hover-color"]:hover {
 }
 
 .new-playlist:hover .plus {
-    background-color: var(--text-hoover);
+    background-color: var(--text-hover);
 
 }
