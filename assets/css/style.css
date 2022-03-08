@@ -56,6 +56,10 @@ body {
     font-size: small;
 }
 
+.round{
+    border-radius: 50%;
+}
+
 /* #endregion General */
 
 
@@ -176,6 +180,17 @@ body {
     text-transform: uppercase;
 }
 
+.box{
+    max-height: calc(100vh - 180px);
+    overflow-y: auto;
+    margin: 0 1rem;
+}
+
+.box h2{
+    margin: 1rem 0;
+}
+
+
 .music-navbar {
     display: flex;
     justify-content: center;
@@ -192,9 +207,10 @@ body {
 }
 
 .card{
-    width: 180px;
+    width: 15%;
     text-align: center;
 }
+
 
 .card-cover>img{
     width: 100%;
@@ -205,14 +221,12 @@ body {
     margin-top: 0.8rem;
 }
 
-
 .container-display {
     display: flex;
     flex-wrap: wrap;
-    max-height: calc(100vh - 180px);
-    overflow-y: auto;
-    margin: 1rem;
-    row-gap: 2rem;
+    row-gap: 2%;
+    column-gap: 2%;
+    margin: 2rem 0;
 }
 
 .played{
