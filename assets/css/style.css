@@ -92,10 +92,39 @@ li[class$="hover-color"]:hover {
 
 .logo {
     margin-bottom: 1rem;
+    animation: boing 2s;
 }
 
 .logo>img {
     width: 130px;
+
+
+}
+
+@keyframes boing {
+
+    15%,
+    40%,
+    75%,
+    100% {
+        transform-origin: center center;
+    }
+
+    15% {
+        transform: scale(1.2, 1.1);
+    }
+
+    40% {
+        transform: scale(0.95, 0.95);
+    }
+
+    75% {
+        transform: scale(1.05, 1);
+    }
+
+    100% {
+        transform: scale(1, 1);
+    }
 }
 
 .hidden {
@@ -115,7 +144,7 @@ li[class$="hover-color"]:hover {
     filter: brightness(0.5);
 }
 
-.btn-bar>.side-flex>h3{
+.btn-bar>.side-flex>h3 {
     padding: 1rem 0;
 }
 
@@ -177,8 +206,7 @@ li[class$="hover-color"]:hover {
 }
 
 .app-down:hover #download-btn {
-    filter: none !important;
-    ;
+    filter: none;
 }
 
 .app-down img {
@@ -189,7 +217,7 @@ li[class$="hover-color"]:hover {
     width: 1.5rem;
     background-color: var(--text-primary);
     border-radius: 50%;
-    filter: none !important;
+    filter: none;
 }
 
 /* #endregion Sidebar */
@@ -220,8 +248,7 @@ li[class$="hover-color"]:hover {
 }
 
 .upgrade-btn:hover {
-    font-size: medium;
-
+    font-size: 1rem;
 }
 
 .box {
@@ -269,10 +296,42 @@ li[class$="hover-color"]:hover {
     text-align: center;
 }
 
+.card:hover .card-cover{
+    animation: zoom 1s;
+    
+}
+
+@keyframes zoom {
+    50%{
+        transform: scale(1.1);
+        transform-origin: center center;
+    }
+    
+}
+
+.card:hover .card-text>span {
+    animation: select-card 1s;
+    
+}
+
+
+@keyframes select-card {
+
+    50% {
+        border-bottom: solid thin var(--text-lighter);
+        font-size: 1rem;
+        color: var(--text-secondary);
+
+    }
+
+}
 
 .card-cover>img {
     width: 100%;
+
 }
+
+
 
 .card-text {
     line-height: 1.5rem;
@@ -289,6 +348,20 @@ li[class$="hover-color"]:hover {
 
 .card:hover .play-input {
     visibility: visible;
+    animation: selection 1s;
+}
+
+
+@keyframes selection {
+    0% {}
+
+    50% {
+        font-size: 1rem;
+        color: green;
+    }
+
+    100% {}
+
 }
 
 .card:hover .card-cover>img {
@@ -446,11 +519,7 @@ li[class$="hover-color"]:hover {
 
 
 /* Mediaquery */
-@media screen and (max-width: 1440px) {
-
-
-
-}
+@media screen and (max-width: 1440px) {}
 
 
 /* laptop */
@@ -500,7 +569,7 @@ li[class$="hover-color"]:hover {
 
     }
 
-    .logo{
+    .logo {
         text-align: center;
     }
 
