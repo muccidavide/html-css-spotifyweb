@@ -92,7 +92,6 @@ li[class$="hover-color"]:hover {
 
 .logo {
     margin-bottom: 1rem;
-    text-align: center;
 }
 
 .logo>img {
@@ -114,6 +113,10 @@ li[class$="hover-color"]:hover {
     width: 2rem;
     margin-right: 0.5rem;
     filter: brightness(0.5);
+}
+
+.btn-bar>.side-flex>h3{
+    padding: 1rem 0;
 }
 
 .home:hover #home,
@@ -142,6 +145,7 @@ li[class$="hover-color"]:hover {
 }
 
 .playlists {
+    flex-grow: 1;
     overflow-y: auto;
 }
 
@@ -454,6 +458,7 @@ li[class$="hover-color"]:hover {
 
     .sidebar {
         width: 180px;
+        transition: 1s;
     }
 
     .display {
@@ -495,10 +500,16 @@ li[class$="hover-color"]:hover {
 
     }
 
+    .logo{
+        text-align: center;
+    }
+
     .logo,
     .home>span,
     .search>span,
     .library>span,
+    .playlists,
+    .new-playlist,
     .playlist,
     .user-box {
         display: none;
