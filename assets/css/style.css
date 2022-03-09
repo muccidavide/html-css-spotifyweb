@@ -73,6 +73,9 @@ li[class$="hover-color"]:hover {
 
 .container-main {
     display: flex;
+    height: calc(100vh - 90px);
+    max-height: 100vh;
+    overflow: hidden;
 }
 
 /* #region Sidebar */
@@ -82,11 +85,22 @@ li[class$="hover-color"]:hover {
     height: calc(100vh - 90px);
     background-color: var(--bg-secondary);
     padding: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 
 .logo {
     margin-bottom: 1rem;
-    width: 80%;
+    text-align: center;
+}
+
+.logo>img {
+    width: 130px;
+}
+
+.hidden {
+    display: none;
 }
 
 .side-flex {
@@ -143,9 +157,9 @@ li[class$="hover-color"]:hover {
 /* User */
 
 .user-box {
-    position: absolute;
+    /* position: absolute;
     bottom: 0;
-    z-index: 2;
+    z-index: 2; */
     background-color: var(--bg-secondary);
 }
 
@@ -181,8 +195,6 @@ li[class$="hover-color"]:hover {
 .display {
     width: calc(100% - 230px);
     background-color: var(--bg-primary);
-    height: calc(100vh - 90px);
-    max-height: 100vh;
 }
 
 .header-display {
@@ -191,10 +203,11 @@ li[class$="hover-color"]:hover {
 }
 
 .upgrade-btn {
+    font-size: 0.6rem;
     position: absolute;
-    right: -5%;
+    right: 0;
     top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(0, -50%);
     border: solid white;
     padding: 0.7rem 2.5rem;
     border-radius: 30px;
@@ -204,7 +217,6 @@ li[class$="hover-color"]:hover {
 
 .upgrade-btn:hover {
     font-size: medium;
-    right: -6%;
 
 }
 
@@ -220,10 +232,14 @@ li[class$="hover-color"]:hover {
 
 
 .music-navbar {
+    margin-top: 1rem;
+}
+
+.navbar {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 1rem;
+    flex-wrap: wrap;
 }
 
 .navbar li {
@@ -278,7 +294,7 @@ li[class$="hover-color"]:hover {
 .container-display {
     display: flex;
     flex-wrap: wrap;
-    row-gap: 2%;
+    row-gap: 1rem;
     column-gap: 2%;
     margin: 2rem 1rem 2rem 0;
 }
@@ -300,15 +316,21 @@ li[class$="hover-color"]:hover {
     justify-content: space-between;
     align-items: center;
     padding: 5px;
+    font-size: 0.7rem;
 }
 
 .col-left,
 .col-right {
     display: flex;
-    width: 15%;
     flex-direction: row;
     align-items: center;
+    flex-grow: 1;
+    max-width: 30%;
+    column-gap: 2%;
+
 }
+
+
 
 .col-right {
     justify-content: flex-end;
@@ -324,7 +346,10 @@ li[class$="hover-color"]:hover {
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    width: 60%;
+    width: 40%;
+
+
+
 }
 
 .controls,
@@ -342,8 +367,9 @@ li[class$="hover-color"]:hover {
 .col-left>div,
 .controls>i,
 .col-right>i {
-    margin: 0 10px;
+    margin: 0 3px;
 }
+
 
 .cl-center:hover .song-name {
     border-bottom: solid thin var(--text-hover);
@@ -416,41 +442,83 @@ li[class$="hover-color"]:hover {
 
 
 /* Mediaquery */
+@media screen and (max-width: 1440px) {
+
+
+
+}
+
+
 /* laptop */
 @media screen and (max-width: 1024px) {
 
-   .sidebar{
-       width:180px;
-   }
+    .sidebar {
+        width: 180px;
+    }
 
-   .display{
-       width: calc(100% - 180px);
-   }
-   .card h3{
-       font-size: small;
-   }
+    .display {
+        width: calc(100% - 180px);
+    }
 
-   .card{
-       width: 20%;
-   }
+    body {
+        font-size: smaller;
+    }
+
+    .card {
+        width: calc(100% / 4 - 2%);
+    }
 
 
 }
 
 @media screen and (max-width: 768px) {
-    .sidebar{
-        width:160px;
+    .card {
+        width: calc(100% / 3 - 2%);
     }
- 
-    .display{
-        width: calc(100% - 160px);
-    }
-   
+
 }
 
 
-/* @media screen and (max-width: 320px) {
-    body {
-        background-color: rgb(49, 214, 27);
+@media screen and (max-width: 425px) {
+    .sidebar {
+        width: 50px;
+        overflow-y: hidden;
+        padding: 0;
     }
-} */
+
+    .sidebar img {
+        margin: auto;
+    }
+
+    .display {
+        width: calc(100% - 50px);
+
+    }
+
+    .logo,
+    .home>span,
+    .search>span,
+    .library>span,
+    .playlist,
+    .user-box {
+        display: none;
+    }
+
+    .hidden {
+        display: block;
+        margin-top: 1.2rem;
+    }
+
+    .card {
+        width: calc(100% / 2 - 2%);
+    }
+
+    /* .col-left, .col-right{
+        width: 140px;
+    }
+
+    .col-center{
+        width: calc(100% - 140px);
+    } */
+
+}

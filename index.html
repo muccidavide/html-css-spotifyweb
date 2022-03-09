@@ -17,12 +17,17 @@
 </head>
 
 <body>
-    <main id="main_site">
-        <div class="container-main">
-            <aside class="sidebar sub-title p-rel">
 
+    <div class="container-main">
+
+        <aside class="sidebar sub-title">
+
+            <div class="btn-bar">
                 <div class="logo">
                     <img src="./assets/img/logo.svg" alt="spotify logo">
+                </div>
+                <div class="logo hidden">
+                    <i class="fa-brands fa-spotify fa-2x title"></i>
                 </div>
 
                 <div class="home side-flex hover-color">
@@ -48,310 +53,292 @@
                     </span>
                 </div>
 
-                <section class="playlist">
-                    <h3 class="title">Playlist</h3>
-                    <div class="new-playlist side-flex hover-color">
-                        <div class="plus">
-                            <i class="fa-solid fa-plus fa-lg"></i>
-                        </div>
-                        <span>
-                            Crea Playlist
-                        </span>
+            </div>
 
+            <div class="playlist">
+                <h3 class="title">Playlist</h3>
+                <div class="new-playlist side-flex hover-color">
+                    <div class="plus">
+                        <i class="fa-solid fa-plus fa-lg"></i>
                     </div>
-                    <div class="playlists">
-                        <div class="name-playlist hover-color">
-                            Nome playlist
-                        </div>
-                        <div class="name-playlist hover-color">
-                            Nome playlist
-                        </div>
-                        <div class="name-playlist hover-color">
-                            Nome playlist
-                        </div>
-                        <div class="name-playlist hover-color">
-                            Nome playlist
-                        </div>
-                        <div class="name-playlist hover-color">
-                            Nome playlist
-                        </div>
-                        <div class="name-playlist hover-color">
-                            Nome playlist
-                        </div>
-                        <div class="name-playlist hover-color">
-                            Nome playlist
-                        </div>
-
-                    </div>
-
-                </section>
-                <!-- /playlist section -->
-
-                <div class="user-box">
-                    <div class="app-down side-flex hover-color">
-                        <img id="download-btn" src="./assets/img/download.svg" alt="download">
-                        <span>Installa app</span>
-                    </div>
-                    <div class="user side-flex title">
-                        <img src="./assets/img/profile.svg" alt="profile picture">
-                        <span>Davide Mucci</span>
-                    </div>
-
+                    <span>
+                        Crea Playlist
+                    </span>
 
                 </div>
-
-            </aside>
-            <!-- /sidebar -->
-
-            <div class="display">
-                <header class="header-display p-rel ">
-                    <div class="upgrade-btn title">
-                        <span>Effettua Upgrade</span>
+                <div class="playlists">
+                    <div class="name-playlist hover-color">
+                        Nome playlist
                     </div>
-
-                </header>
-                <!-- /header-display -->
-                <div class="box">
-
-
-                    <nav class="music-navbar">
-                        <ul class="navbar sub-title">
-                            <li class="p-rel hover-color">in evidenza
-                                <hr class="green">
-                            </li>
-                            <li class="hover-color">podcast</li>
-                            <li class="hover-color">classifiche</li>
-                            <li class="hover-color">generi e mood</li>
-                            <li class="hover-color">nuove uscite</li>
-                            <li class="hover-color">scopri</li>
-                        </ul>
-                    </nav>
-                    <!-- /navbar -->
-
-                    <div class="played">
-                        <h2 class="title">Recently played</h2>
+                    <div class="name-playlist hover-color">
+                        Nome playlist
                     </div>
-                    <div class="container-display">
-
-                        <div class="card">
-                            <div class="p-rel card-cover">
-                                <img src="./assets/img/metal_lifting.jpg" alt="heavy metal playlist albums cover">
-                                <div class="play-input title">
-                                    <i class="fa-regular fa-circle-play fa-5x"></i>
-                                </div>
-                            </div>
-                            <div class="card-text">
-                                <h3 class="title">Heavy Metal</h3>
-                                <span class="t-lighter">Subtitle</span>
-                            </div>
-
-                        </div>
-
-                        <div class="card">
-                            <div class="p-rel card-cover">
-                                <img src="./assets/img/stranger.jpeg" alt="Stranger things albums cover">
-                                <div class="play-input title">
-                                    <i class="fa-regular fa-circle-play fa-5x"></i>
-                                </div>
-                            </div>
-                            <div class="card-text">
-                                <h3 class="title">Stranger Things, VOL 1 (a Netflix Original Series Soundtrack)</h3>
-                                <span class="t-lighter">Subtitle</span>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="p-rel card-cover">
-                                <img src="./assets/img/aquietplace.jpeg" alt="a quite place albums cover">
-                                <div class="play-input title">
-                                    <i class="fa-regular fa-circle-play fa-5x"></i>
-                                </div>
-                            </div>
-                            <div class="card-text">
-                                <h3 class="title">A quie place</h3>
-                                <span class="t-lighter">Subtitle</span>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="p-rel card-cover">
-                                <img src="./assets/img/split.jpeg" alt="Splits albums cover">
-                                <div class="play-input title">
-                                    <i class="fa-regular fa-circle-play fa-5x"></i>
-                                </div>
-                            </div>
-                            <div class="card-text">
-                                <h3 class="title">Split</h3>
-                                <span class="t-lighter">Subtitle</span>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="p-rel card-cover">
-                                <img src="./assets/img/cure.jpeg" alt="a cure of wellness albums cover">
-                                <div class="play-input title">
-                                    <i class="fa-regular fa-circle-play fa-5x"></i>
-                                </div>
-                            </div>
-                            <div class="p-rel card-text">
-                                <h3 class="title">A cure of wellness</h3>
-                                <span class="t-lighter">Subtitle</span>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="p-rel card-cover">
-                                <img src="./assets/img/sinister.jpeg" alt="sinister albums cover">
-                                <div class="play-input title">
-                                    <i class="fa-regular fa-circle-play fa-5x"></i>
-                                </div>
-                            </div>
-                            <div class="card-text">
-                                <h3 class="title">Sinister</h3>
-                                <span class="t-lighter">Subtitle</span>
-                            </div>
-                        </div>
-
+                    <div class="name-playlist hover-color">
+                        Nome playlist
                     </div>
-                    <!-- /Recently played section -->
-
-                    <div class="de-gustibus">
-                        <h2 class="title">Creato per John Doe</h2>
-                        <span class="sub-title">Più ascolti, piu accurati saranno i suggerimenti.</span>
+                    <div class="name-playlist hover-color">
+                        Nome playlist
                     </div>
-
-                    <div class="container-display">
-
-                        <div class="card">
-                            <div class="p-rel card-cover">
-                                <img src="./assets/img/radar.jpeg" alt="release radar playlist albums cover">
-                                <div class="play-input title">
-                                    <i class="fa-regular fa-circle-play fa-5x"></i>
-                                </div>
-                            </div>
-                            <div class="card-text">
-                                <h3 class="title">Release Radar</h3>
-                            </div>
-                        </div>
-
-                        <div class="p-rel card">
-                            <div class="p-rel card-cover">
-                                <img src="./assets/img/mixdaily.jpeg" alt="daily mix albums cover">
-                                <div class="play-input title">
-                                    <i class="fa-regular fa-circle-play fa-5x"></i>
-                                </div>
-                            </div>
-                            <div class="card-text">
-                                <h3 class="title">Daily Mix 1</h3>
-                            </div>
-                        </div>
-
+                    <div class="name-playlist hover-color">
+                        Nome playlist
                     </div>
-
-                    <!-- /De-gustibus section -->
-
-                    <div class="popular">
-                        <h2 class="title">Artisti più popolari</h2>
-                        <span class="sub-title">Più ascolti, piu accurati saranno i suggerimenti.</span>
+                    <div class="name-playlist hover-color">
+                        Nome playlist
                     </div>
-
-                    <div class="container-display">
-
-                        <div class="card">
-                            <div class="p-rel card-cover">
-                                <img class="round" src="./assets/img/youg.jpeg" alt="youg albums cover">
-                                <div class="play-input title">
-                                    <i class="fa-regular fa-circle-play fa-5x"></i>
-                                </div>
-
-                            </div>
-                            <div class="card-text">
-                                <h3 class="title">Lana Del Rey</h3>
-                            </div>
-                        </div>
-
-                        <div class="card">
-                            <div class="p-rel card-cover">
-                                <img class="round" src="./assets/img/einaudi.jpeg" alt="einaudi photo">
-                                <div class="play-input title">
-                                    <i class="fa-regular fa-circle-play fa-5x"></i>
-                                </div>
-
-                            </div>
-                            <div class="card-text">
-                                <h3 class="title">Ludovico Einaudi</h3>
-                            </div>
-                        </div>
-
+                    <div class="name-playlist hover-color">
+                        Nome playlist
                     </div>
 
                 </div>
 
+            </div>
+            <!-- /playlist section -->
+
+            <div class="user-box">
+                <div class="app-down side-flex hover-color">
+                    <img id="download-btn" src="./assets/img/download.svg" alt="download">
+                    <span>Installa app</span>
+                </div>
+                <div class="user side-flex title">
+                    <img src="./assets/img/profile.svg" alt="profile picture">
+                    <span>Davide Mucci</span>
+                </div>
 
 
             </div>
-            <!-- /display -->
+
+        </aside>
+        <!-- /sidebar -->
+
+        <main class="display">
+            <header class="header-display p-rel ">
+                <div class="upgrade-btn title">
+                    <span>Effettua Upgrade</span>
+                </div>
+
+            </header>
+            <!-- /header-display -->
+            <div class="box">
+
+
+                <nav class="music-navbar">
+                    <ul class="navbar sub-title">
+                        <li class="p-rel hover-color">in evidenza
+                            <hr class="green">
+                        </li>
+                        <li class="hover-color">podcast</li>
+                        <li class="hover-color">classifiche</li>
+                        <li class="hover-color">generi e mood</li>
+                        <li class="hover-color">nuove uscite</li>
+                        <li class="hover-color">scopri</li>
+                    </ul>
+                </nav>
+                <!-- /navbar -->
+
+                <div class="played">
+                    <h2 class="title">Recently played</h2>
+                </div>
+                <div class="container-display">
+
+                    <div class="card">
+                        <div class="p-rel card-cover">
+                            <img src="./assets/img/metal_lifting.jpg" alt="heavy metal playlist albums cover">
+                            <div class="play-input title">
+                                <i class="fa-regular fa-circle-play fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="title">Heavy Metal</h3>
+                            <span class="t-lighter">Subtitle</span>
+                        </div>
+
+                    </div>
+
+                    <div class="card">
+                        <div class="p-rel card-cover">
+                            <img src="./assets/img/stranger.jpeg" alt="Stranger things albums cover">
+                            <div class="play-input title">
+                                <i class="fa-regular fa-circle-play fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="title">Stranger Things, VOL 1 (a Netflix Original Series Soundtrack)</h3>
+                            <span class="t-lighter">Subtitle</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-rel card-cover">
+                            <img src="./assets/img/aquietplace.jpeg" alt="a quite place albums cover">
+                            <div class="play-input title">
+                                <i class="fa-regular fa-circle-play fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="title">A quie place</h3>
+                            <span class="t-lighter">Subtitle</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-rel card-cover">
+                            <img src="./assets/img/split.jpeg" alt="Splits albums cover">
+                            <div class="play-input title">
+                                <i class="fa-regular fa-circle-play fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="title">Split</h3>
+                            <span class="t-lighter">Subtitle</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-rel card-cover">
+                            <img src="./assets/img/cure.jpeg" alt="a cure of wellness albums cover">
+                            <div class="play-input title">
+                                <i class="fa-regular fa-circle-play fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class="p-rel card-text">
+                            <h3 class="title">A cure of wellness</h3>
+                            <span class="t-lighter">Subtitle</span>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-rel card-cover">
+                            <img src="./assets/img/sinister.jpeg" alt="sinister albums cover">
+                            <div class="play-input title">
+                                <i class="fa-regular fa-circle-play fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="title">Sinister</h3>
+                            <span class="t-lighter">Subtitle</span>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /Recently played section -->
+
+                <div class="de-gustibus">
+                    <h2 class="title">Creato per John Doe</h2>
+                    <span class="sub-title">Più ascolti, piu accurati saranno i suggerimenti.</span>
+                </div>
+
+                <div class="container-display">
+
+                    <div class="card">
+                        <div class="p-rel card-cover">
+                            <img src="./assets/img/radar.jpeg" alt="release radar playlist albums cover">
+                            <div class="play-input title">
+                                <i class="fa-regular fa-circle-play fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="title">Release Radar</h3>
+                        </div>
+                    </div>
+
+                    <div class="p-rel card">
+                        <div class="p-rel card-cover">
+                            <img src="./assets/img/mixdaily.jpeg" alt="daily mix albums cover">
+                            <div class="play-input title">
+                                <i class="fa-regular fa-circle-play fa-5x"></i>
+                            </div>
+                        </div>
+                        <div class="card-text">
+                            <h3 class="title">Daily Mix 1</h3>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- /De-gustibus section -->
+
+                <div class="popular">
+                    <h2 class="title">Artisti più popolari</h2>
+                    <span class="sub-title">Più ascolti, piu accurati saranno i suggerimenti.</span>
+                </div>
+
+                <div class="container-display">
+
+                    <div class="card">
+                        <div class="p-rel card-cover">
+                            <img class="round" src="./assets/img/youg.jpeg" alt="youg albums cover">
+                            <div class="play-input title">
+                                <i class="fa-regular fa-circle-play fa-5x"></i>
+                            </div>
+
+                        </div>
+                        <div class="card-text">
+                            <h3 class="title">Lana Del Rey</h3>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <div class="p-rel card-cover">
+                            <img class="round" src="./assets/img/einaudi.jpeg" alt="einaudi photo">
+                            <div class="play-input title">
+                                <i class="fa-regular fa-circle-play fa-5x"></i>
+                            </div>
+
+                        </div>
+                        <div class="card-text">
+                            <h3 class="title">Ludovico Einaudi</h3>
+                        </div>
+                    </div>
+
+                </div>
+
             </div>
 
-    </main>
+
+
+        </main>
+        <!-- /display -->
+    </div>
+
+
     <!-- /#main_site -->
 
-    <footer id="footer_site">
-        <div class="btm-bar">
-            <div class="col-left f-small">
-                <div class="cl-left">
-                    <img src="./assets/img/sinister.jpeg" alt="sinister album">
+    <footer id="footer_site" class="btm-bar">
 
-                </div>
-
-                <div class="cl-center">
-                    <span class="song-artist title">Sinistar</span><br>
-                    <span class="song-name sub-title hover-color">Brano nome</span>
-
-                </div>
-                <div class="cl-right">
-                    <i id="heart" class="fa-regular fa-heart sub-title"></i>
-                    <i id="folder" class="fa-regular fa-folder sub-title"></i>
-
-                </div>
+        <div class="col-left">
+            <div class="cl-left">
+                <img src="./assets/img/sinister.jpeg" alt="sinister album">
 
             </div>
-            <!-- /.col-left -->
-            <div class="col-center">
-                <div class="controls title side-flex">
-                    <i class="fa-solid fa-shuffle fa-lg"></i>
-                    <i class="fa-solid fa-backward-step fa-lg"></i>
-                    <div class="play">
-                        <i class="fa-regular fa-circle-play fa-2x zoom"></i>
-                    </div>
-                    <i class="fa-solid fa-forward-step fa-lg"></i>
-                    <i class="fa-solid fa-rotate-right fa-lg"></i>
 
-                </div>
-                <div class="time-bar title side-flex">
-                    <div>0:25</div>
-                    <!-- <input class="slider song-slider" type="range"> -->
-
-                    <div class="slider play-slider p-rel">
-                        <div class="slider light-slider">
-                            <div class="point-box pos-rel">
-                                <div class="point-slider">
-
-                                </div>
-
-                            </div>
-                            
-                        </div>
-                    </div>
-                    <div>4:35</div>
-                </div>
+            <div class="cl-center">
+                <span class="song-artist title">Sinistar</span><br>
+                <span class="song-name sub-title hover-color">Brano nome</span>
 
             </div>
-            <!-- /.col-center -->
-            <div class="col-right title">
-                <i class="fa-solid fa-list"></i>
-                <i class="fa-solid fa-desktop"></i>
-                <i class="fa-solid fa-volume-high"></i>
+            <div class="cl-right">
+                <i id="heart" class="fa-regular fa-heart sub-title"></i>
+                <i id="folder" class="fa-regular fa-folder sub-title"></i>
+
+            </div>
+
+        </div>
+        <!-- /.col-left -->
+        <div class="col-center">
+            <div class="controls title side-flex">
+                <i class="fa-solid fa-shuffle fa-lg"></i>
+                <i class="fa-solid fa-backward-step fa-lg"></i>
+                <div class="play">
+                    <i class="fa-regular fa-circle-play fa-2x zoom"></i>
+                </div>
+                <i class="fa-solid fa-forward-step fa-lg"></i>
+                <i class="fa-solid fa-rotate-right fa-lg"></i>
+
+            </div>
+            <div class="time-bar title side-flex">
+                <div>0:25</div>
+                <!-- <input class="slider song-slider" type="range"> -->
+
                 <div class="slider play-slider p-rel">
                     <div class="slider light-slider">
                         <div class="point-box pos-rel">
@@ -360,14 +347,34 @@
                             </div>
 
                         </div>
+
                     </div>
                 </div>
-
-
+                <div>4:35</div>
             </div>
-            <!-- /.col-right -->
 
         </div>
+        <!-- /.col-center -->
+        <div class="col-right title">
+            <i class="fa-solid fa-list"></i>
+            <i class="fa-solid fa-desktop"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="slider play-slider p-rel">
+                <div class="slider light-slider">
+                    <div class="point-box pos-rel">
+                        <div class="point-slider">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- /.col-right -->
+
+
 
     </footer>
     <!-- /#footer_site -->
