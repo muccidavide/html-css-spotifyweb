@@ -34,7 +34,8 @@ a {
     text-decoration: none;
 }
 
-ul,li{
+ul,
+li {
     text-decoration: none;
     list-style: none;
 }
@@ -88,8 +89,7 @@ ul,li{
 div[class$="hover-color"]:hover,
 span[class$="hover-color"]:hover,
 li[class$="hover-color"]:hover,
-a[class$="hover-color"]:hover
- {
+a[class$="hover-color"]:hover {
     color: var(--text-hover);
 }
 
@@ -166,13 +166,14 @@ a[class$="hover-color"]:hover
     filter: none;
 }
 
-.btn-bar>.side-flex>h3 {
-    padding: 1rem 0;
+.btn-bar h3 {
+    margin-top: 1rem;
 }
 
 /* PLaylist */
 .playlist {
-    margin-top: 1.3rem;
+    flex-grow: 1;
+    overflow-y: auto;
 }
 
 .playlist>h3 {
@@ -188,7 +189,6 @@ a[class$="hover-color"]:hover
 }
 
 .playlists {
-    flex-grow: 1;
     overflow-y: auto;
 }
 
@@ -200,6 +200,10 @@ a[class$="hover-color"]:hover
     margin-top: 1.5rem;
 }
 
+.new-playlist {
+    margin-top: 1rem;
+}
+
 .new-playlist:hover .plus {
     background-color: var(--text-hover);
 
@@ -208,9 +212,6 @@ a[class$="hover-color"]:hover
 /* User */
 
 .user-box {
-    /* position: absolute;
-    bottom: 0;
-    z-index: 2; */
     background-color: var(--bg-secondary);
 }
 
@@ -225,6 +226,10 @@ a[class$="hover-color"]:hover
 
 .app-down:hover #download-btn {
     filter: none;
+}
+
+.user-box img {
+    margin-right: 0.5rem;
 }
 
 .app-down img {
@@ -516,10 +521,33 @@ a[class$="hover-color"]:hover
 
 
 /* Mediaquery */
-@media screen and (max-width: 1440px) and (min-height:50%) {}
+
+/* Laptop */
+@media screen and (max-width: 1440px) and (max-height:400px) {
+    .upgrade-btn {
+        color: transparent;
+        border: transparent;
+    }
+
+    .header-display {
+        background-color: transparent;
+        height: 0;
+        transition: height 3s;
+    }
+    
+.col-center{
+    width: 60%;
+}
+
+.col-left,
+.col-right{
+    width: 20%;
+}
+}
 
 
-/* laptop */
+
+/* laptop small */
 @media screen and (max-width: 1024px) {
 
     .sidebar {
@@ -538,19 +566,36 @@ a[class$="hover-color"]:hover
     .card {
         width: calc(100% / 4 - 2%);
     }
-
+    .container-display {
+        flex-wrap: nowrap;
+        overflow-x: auto;
+    }
+   
 
 }
 
+/* Tablet */
 @media screen and (max-width: 768px) {
     .card {
-        width: calc(100% / 3 - 2%);
+        width: calc(100% / 3);
+        min-width: 200px;
     }
+    
+.container-display {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+}
 
 }
 
+/* Mobile xl */
 
 @media screen and (max-width: 425px) {
+    .container-display {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .sidebar {
         width: 50px;
         overflow-y: hidden;
@@ -571,10 +616,11 @@ a[class$="hover-color"]:hover
     }
 
     .logo,
-    .home>span,
-    .search>span,
-    .library>span,
+    .home span,
+    .search span,
+    .library span,
     .playlists,
+    .playlist-title,
     .new-playlist,
     .playlist,
     .user-box {
@@ -586,19 +632,32 @@ a[class$="hover-color"]:hover
         margin-top: 1.2rem;
     }
 
-    .card {
-        width: calc(100% / 2 - 2%);
+    .header-display{
+        height: 50px;
     }
 
-    /* .col-left, .col-right{
-        width: 140px;
+    .upgrade-btn{
+        font-size: 0.5rem;
+        padding: 0.3rem 1.2rem;
+    }
+
+    .card {
+        width: calc(100% / 2 - 2%);
+        min-width: none;
     }
 
     .col-center{
-        width: calc(100% - 140px);
-    } */
+        width: 40%;
+    }
+
+    .col-left,
+    .col-right{
+        width: 30%;
+    }
 
 }
+
+/* Mobile sml */
 
 @media screen and (max-width: 320px) {
 
@@ -606,5 +665,5 @@ a[class$="hover-color"]:hover
         width: calc(100% / 1);
     }
 
-
+    
 }
