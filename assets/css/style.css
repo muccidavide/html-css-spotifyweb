@@ -111,7 +111,7 @@ a[class$="hover-color"]:hover {
     width: 230px;
     height: calc(100vh - 90px);
     background-color: var(--bg-secondary);
-    padding: 1.2rem;
+    padding: 1rem 1rem 0 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -188,20 +188,12 @@ a[class$="hover-color"]:hover {
     margin-right: 0.5rem;
 }
 
-.playlists {
-    overflow-y: auto;
-}
-
-.name-playlist>a {
-    color: var(--text-primary);
-}
-
 .name-playlist {
     margin-top: 1.5rem;
 }
 
-.new-playlist {
-    margin-top: 1rem;
+.name-playlist>a {
+    color: var(--text-primary);
 }
 
 .new-playlist:hover .plus {
@@ -211,8 +203,8 @@ a[class$="hover-color"]:hover {
 
 /* User */
 
-.user-box {
-    background-color: var(--bg-secondary);
+.user-box a{
+    color: var(--text-primary);
 }
 
 .app-down {
@@ -224,23 +216,22 @@ a[class$="hover-color"]:hover {
     padding: 0.5rem 0;
 }
 
+#download-btn{
+    filter: brightness(0.5);
+}
+
 .app-down:hover #download-btn {
     filter: none;
 }
 
 .user-box img {
     margin-right: 0.5rem;
-}
-
-.app-down img {
-    width: 1rem;
-}
-
-.user>img {
     width: 1.5rem;
+}
+
+.user img {
     background-color: var(--text-primary);
     border-radius: 50%;
-    filter: none;
 }
 
 /* #endregion Sidebar */
@@ -267,7 +258,7 @@ a[class$="hover-color"]:hover {
     padding: 0.7rem 2.5rem;
     border-radius: 30px;
     text-transform: uppercase;
-    transition: all 1s;
+    transition: font-size 1s;
 }
 
 .upgrade-btn:hover {
@@ -283,7 +274,6 @@ a[class$="hover-color"]:hover {
 .box h2 {
     margin: 1rem 0;
 }
-
 
 .music-navbar {
     margin-top: 1rem;
@@ -334,7 +324,6 @@ a[class$="hover-color"]:hover {
 
 }
 
-
 .card-cover>img {
     width: 100%;
 
@@ -358,17 +347,20 @@ a[class$="hover-color"]:hover {
     animation: selection 2s infinite;
 }
 
-
 @keyframes selection {
-    0% {}
-
-    50% {
+    0%{
         font-size: 0.8rem;
-        color: rgb(166, 255, 166);
+        
     }
+    50%{
+        font-size: 0.7rem;
+    }
+    
 
-    100% {}
-
+    100%{
+        font-size: 0.8rem;
+    
+    }
 }
 
 .card:hover .card-cover>img {
@@ -403,6 +395,14 @@ a[class$="hover-color"]:hover {
     font-size: 0.7rem;
 }
 
+.col-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 40%;
+}
+
 .col-left,
 .col-right {
     display: flex;
@@ -414,8 +414,6 @@ a[class$="hover-color"]:hover {
 
 }
 
-
-
 .col-right {
     justify-content: flex-end;
 }
@@ -423,14 +421,6 @@ a[class$="hover-color"]:hover {
 .cl-left>img {
     width: 50px;
     height: auto;
-}
-
-.col-center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
-    width: 40%;
 }
 
 .controls,
@@ -449,10 +439,8 @@ a[class$="hover-color"]:hover {
     margin: 0 3px;
 }
 
-
 .cl-center:hover .song-name {
     border-bottom: solid thin var(--text-hover);
-
 }
 
 .cl-right>i {
@@ -508,11 +496,15 @@ a[class$="hover-color"]:hover {
     display: none;
 }
 
-.play-slider:hover .light-slider {
+.play-slider:hover .light-slider,
+.vol-slider:hover .light-slider
+ {
     background-color: var(--text-selection);
 }
 
-.play-slider:hover .point-slider {
+.play-slider:hover .point-slider,
+.vol-slider:hover .point-slider
+ {
     display: block;
 }
 
@@ -623,8 +615,12 @@ a[class$="hover-color"]:hover {
     .playlist-title,
     .new-playlist,
     .playlist,
-    .user-box {
+    .user-box a {
         display: none;
+    }
+
+    .app-down {
+        border-bottom: none;
     }
 
     .hidden {

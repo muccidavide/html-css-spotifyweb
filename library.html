@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Spotify</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+    
+    </head>
+<body>
+    <div class="container-main">
+
+        <aside class="sidebar sub-title">
+
+            <ul class="btn-bar">
+
+                <li class="logo">
+                    <a href="">
+                        <img src="./assets/img/logo.svg" alt="spotify logo">
+                    </a>
+                </li>
+                <li class="logo hidden">
+                    <a href="">
+                        <i class="fa-brands fa-spotify fa-2x title"></i>
+                    </a>
+
+                </li>
+                <!-- /logo -->
+
+                <li class="home hover-color">
+
+                    <a class="side-flex sub-title hover-color" href="">
+                        <img id="home" src="./assets/img/home.svg" alt="homepage">
+                        <span>Home</span>
+
+                    </a>
+
+                </li>
+
+                <li class="search ">
+                    <a class="side-flex sub-title hover-color" href="">
+                        <img id="search" src="./assets/img/search.svg" alt="search">
+                        <span>
+                            Cerca
+                        </span>
+                    </a>
+
+
+                </li>
+
+                <li class="library hover-color">
+                    <a class="side-flex sub-title hover-color" href="./pages/library.html">
+                        <img id="library" src="./assets/img/libreria.svg" alt="library">
+                        <span>
+                            Libreria
+                        </span>
+                    </a>
+
+                </li>
+
+                <li class="playlist-title">
+                    <h3 class="title">Playlist</h3>
+                </li>
+
+
+
+                <li class="new-playlist side-flex hover-color">
+                    <div class="plus">
+                        <i class="fa-solid fa-plus fa-lg"></i>
+                    </div>
+                    <span>
+                        Crea Playlist
+                    </span>
+
+                </li>
+            </ul>
+            <!-- /btn-bar -->
+
+            <ul class="playlist">
+
+                <li class="side-flex">
+                    <ul class="playlists">
+                        <li class="name-playlist">
+                            <a class="hover-color" href="">Nome playlist </a>
+                        </li>
+                        <li class="name-playlist">
+                            <a class="hover-color" href="">Nome playlist </a>
+                        </li>
+                        <li class="name-playlist">
+                            <a class="hover-color" href="">Nome playlist </a>
+                        </li>
+                        <li class="name-playlist">
+                            <a class="hover-color" href="">Nome playlist </a>
+                        </li>
+                        <li class="name-playlist">
+                            <a class="hover-color" href="">Nome playlist </a>
+                        </li>
+                        <li class="name-playlist">
+                            <a class="hover-color" href="">Nome playlist </a>
+                        </li>
+                        <li class="name-playlist">
+                            <a class="hover-color" href="">Nome playlist </a>
+                        </li>
+
+                    </ul>
+
+                </li>
+
+            </ul>
+
+            <!-- /playlist section -->
+
+            <div class="user-box">
+                <div class="app-down">
+                    <a class="side-flex hover-color" href="">
+                        <img id="download-btn" src="./assets/img/download.svg" alt="download">
+                        <span>
+                            Installa app
+                        </span>
+                    </a>
+                </div>
+                <div class="user title">
+
+                    <a class="side-flex hover-color" href="">
+                        <img src="./assets/img/profile.svg" alt="profile picture">
+                        <span>
+                            Davide Mucci
+                        </span>
+                    </a>
+                </div>
+
+
+            </div>
+
+        </aside>
+        <!-- /sidebar -->
+
+        <main class="display">
+            <header class="header-display p-rel ">
+                <div class="upgrade-btn title">
+                    <span>Effettua Upgrade</span>
+                </div>
+
+            </header>
+            <!-- /header-display -->
+       
+        </main>
+        <!-- /display -->
+
+
+        
+
+    </div>
+    <!-- /#main_site -->
+
+    <footer id="footer_site" class="btm-bar">
+
+        <div class="col-left">
+            <div class="cl-left">
+                <img src="./assets/img/sinister.jpeg" alt="sinister album">
+
+            </div>
+
+            <div class="cl-center">
+                <span class="song-artist title">Sinistar</span><br>
+                <span class="song-name sub-title hover-color">Brano nome</span>
+
+            </div>
+            <div class="cl-right">
+                <i id="heart" class="fa-regular fa-heart sub-title"></i>
+                <i id="folder" class="fa-regular fa-folder sub-title"></i>
+
+            </div>
+
+        </div>
+        <!-- /.col-left -->
+        <div class="col-center">
+            <div class="controls title side-flex">
+                <i class="fa-solid fa-shuffle fa-lg"></i>
+                <i class="fa-solid fa-backward-step fa-lg"></i>
+                <div class="play">
+                    <i class="fa-regular fa-circle-play fa-2x zoom"></i>
+                </div>
+                <i class="fa-solid fa-forward-step fa-lg"></i>
+                <i class="fa-solid fa-rotate-right fa-lg"></i>
+
+            </div>
+            <div class="time-bar title side-flex">
+                <div>0:25</div>
+                <!-- <input class="slider song-slider" type="range"> -->
+
+                <div class="slider play-slider p-rel">
+                    <div class="slider light-slider">
+                        <div class="point-box pos-rel">
+                            <div class="point-slider">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+                <div>4:35</div>
+            </div>
+
+        </div>
+        <!-- /.col-center -->
+        <div class="col-right title">
+            <i class="fa-solid fa-list"></i>
+            <i class="fa-solid fa-desktop"></i>
+            <i class="fa-solid fa-volume-high"></i>
+            <div class="slider vol-slider p-rel">
+                <div class="slider light-slider">
+                    <div class="point-box pos-rel">
+                        <div class="point-slider">
+
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+        <!-- /.col-right -->
+
+
+
+    </footer>
+    <!-- /#footer_site -->
+
+    
+</body>
+</html>
