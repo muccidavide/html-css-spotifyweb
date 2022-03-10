@@ -1,19 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Spotify</title>
-        <link rel="stylesheet" href="./assets/css/style.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
-            integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
-            crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
-    
-    </head>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
 <body>
     <div class="container-main">
 
@@ -36,7 +38,7 @@
 
                 <li class="home hover-color">
 
-                    <a class="side-flex sub-title hover-color" href="">
+                    <a class="side-flex sub-title hover-color" href="./index.html">
                         <img id="home" src="./assets/img/home.svg" alt="homepage">
                         <span>Home</span>
 
@@ -56,7 +58,7 @@
                 </li>
 
                 <li class="library hover-color">
-                    <a class="side-flex sub-title hover-color" href="./pages/library.html">
+                    <a class="side-flex sub-title hover-color" href="./library.html">
                         <img id="library" src="./assets/img/libreria.svg" alt="library">
                         <span>
                             Libreria
@@ -143,19 +145,454 @@
         <!-- /sidebar -->
 
         <main class="display">
-            <header class="header-display p-rel ">
-                <div class="upgrade-btn title">
-                    <span>Effettua Upgrade</span>
+
+            <div class="box songs-box">
+                <div class="banner">
+                    <img src="https://djmag.com/sites/default/files/article/image/Header-1280x489_0.png" alt="">
                 </div>
 
-            </header>
-            <!-- /header-display -->
-       
+                <div class="row a-center action">
+                    <div class="row a-center col">
+                        <i class="fa-solid fa-circle-play fa-5x c-green"></i>
+                        <i class="fa-solid fa-circle-arrow-down fa-3x title"></i>
+                    </div>
+
+                    <div class="row a-center order title col">
+                        <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                        <span>Ordinamento Personalizzato</span>
+                        <i class="fa-solid fa-caret-down fa-2x"></i>
+                    </div>
+
+
+
+                </div>
+                
+                <!------------
+                 Here Song Grid 
+                -------------->
+
+                <div class="row row-title a-center title">
+                    <div class="number t-upper">
+                        <span>#</span>
+
+                    </div>
+                    <div class="titolo t-upper col ">
+
+                        <span>titolo</span>
+
+                    </div>
+
+                    <div class="album t-upper col">
+                        <span>album</span>
+                    </div>
+                    <div class="date t-upper col">
+                        <span>aggiunto il</span>
+                    </div>
+                    <div class="time t-upper col ">
+                        <span>
+                            <i class="fa-regular fa-clock title"></i>
+                        </span>
+                    </div>
+
+                </div>
+                <div class="row song-row a-center title">
+                    <div class="number">
+                        <span>1</span>
+
+                    </div>
+
+                    <div class="titolo row a-center col ">
+                        <img src="./assets/img/illusion.jpg" alt="">
+
+                        <div class="arts sub-title">
+                            <span class="hover-color">
+                            Live and Let Die
+                        </span>  <br>
+                            <span class="hover-color">
+                                Guns N' Roses
+                            </span>
+                           
+
+                        </div>
+
+                    </div>
+
+                    <div class="album sub-title col">
+                        
+                        <span class="hover-color">Use Your Illusion 1</span>
+                    </div>
+                    <div class="date sub-title col">
+                        <span class="hover-color">2 days ago</span>
+                    </div>
+                    <div class="time sub-title col ">
+                        <span>
+                            <i class="fa-solid fa-heart hover-blue"></i>
+                            <span class="hover-color">3:11</span>
+                        </span>
+                            
+                        
+                    </div>
+
+                </div>
+                <div class="row song-row a-center title">
+                    <div class="number">
+                        <span>1</span>
+
+                    </div>
+                    
+                    <div class="titolo row a-center col ">
+                        <img src="./assets/img/illusion.jpg" alt="">
+
+                        <div class="arts sub-title">
+                            <span class="hover-color">
+                            Live and Let Die
+                        </span>  <br>
+                            <span class="hover-color">
+                                Guns N' Roses
+                            </span>
+                           
+
+                        </div>
+
+                    </div>
+
+                    <div class="album sub-title col">
+                        
+                        <span class="hover-color">Use Your Illusion 1</span>
+                    </div>
+                    <div class="date sub-title col">
+                        <span class="hover-color">2 days ago</span>
+                    </div>
+                    <div class="time sub-title col ">
+                        <span>
+                            <i class="fa-solid fa-heart hover-blue"></i>
+                            <span class="hover-color">3:11</span>
+                        </span>
+                            
+                        
+                    </div>
+
+                </div>
+                <div class="row song-row a-center title">
+                    <div class="number">
+                        <span>1</span>
+
+                    </div>
+                    
+                    <div class="titolo row a-center col ">
+                        <img src="./assets/img/illusion.jpg" alt="">
+
+                        <div class="arts sub-title">
+                            <span class="hover-color">
+                            Live and Let Die
+                        </span>  <br>
+                            <span class="hover-color">
+                                Guns N' Roses
+                            </span>
+                           
+
+                        </div>
+
+                    </div>
+
+                    <div class="album sub-title col">
+                        
+                        <span class="hover-color">Use Your Illusion 1</span>
+                    </div>
+                    <div class="date sub-title col">
+                        <span class="hover-color">2 days ago</span>
+                    </div>
+                    <div class="time sub-title col ">
+                        <span>
+                            <i class="fa-solid fa-heart hover-blue"></i>
+                            <span class="hover-color">3:11</span>
+                        </span>
+                            
+                        
+                    </div>
+
+                </div>
+                <div class="row song-row a-center title">
+                    <div class="number">
+                        <span>1</span>
+
+                    </div>
+                    
+                    <div class="titolo row a-center col ">
+                        <img src="./assets/img/illusion.jpg" alt="">
+
+                        <div class="arts sub-title">
+                            <span class="hover-color">
+                            Live and Let Die
+                        </span>  <br>
+                            <span class="hover-color">
+                                Guns N' Roses
+                            </span>
+                           
+
+                        </div>
+
+                    </div>
+
+                    <div class="album sub-title col">
+                        
+                        <span class="hover-color">Use Your Illusion 1</span>
+                    </div>
+                    <div class="date sub-title col">
+                        <span class="hover-color">2 days ago</span>
+                    </div>
+                    <div class="time sub-title col ">
+                        <span>
+                            <i class="fa-solid fa-heart hover-blue"></i>
+                            <span class="hover-color">3:11</span>
+                        </span>
+                            
+                        
+                    </div>
+
+                </div>
+                <div class="row song-row a-center title">
+                    <div class="number">
+                        <span>1</span>
+
+                    </div>
+                    
+                    <div class="titolo row a-center col ">
+                        <img src="./assets/img/illusion.jpg" alt="">
+
+                        <div class="arts sub-title">
+                            <span class="hover-color">
+                            Live and Let Die
+                        </span>  <br>
+                            <span class="hover-color">
+                                Guns N' Roses
+                            </span>
+                           
+
+                        </div>
+
+                    </div>
+
+                    <div class="album sub-title col">
+                        
+                        <span class="hover-color">Use Your Illusion 1</span>
+                    </div>
+                    <div class="date sub-title col">
+                        <span class="hover-color">2 days ago</span>
+                    </div>
+                    <div class="time sub-title col ">
+                        <span>
+                            <i class="fa-solid fa-heart hover-blue"></i>
+                            <span class="hover-color">3:11</span>
+                        </span>
+                            
+                        
+                    </div>
+
+                </div>
+                <div class="row song-row a-center title">
+                    <div class="number">
+                        <span>1</span>
+
+                    </div>
+                    
+                    <div class="titolo row a-center col ">
+                        <img src="./assets/img/illusion.jpg" alt="">
+
+                        <div class="arts sub-title">
+                            <span class="hover-color">
+                            Live and Let Die
+                        </span>  <br>
+                            <span class="hover-color">
+                                Guns N' Roses
+                            </span>
+                           
+
+                        </div>
+
+                    </div>
+
+                    <div class="album sub-title col">
+                        
+                        <span class="hover-color">Use Your Illusion 1</span>
+                    </div>
+                    <div class="date sub-title col">
+                        <span class="hover-color">2 days ago</span>
+                    </div>
+                    <div class="time sub-title col ">
+                        <span>
+                            <i class="fa-solid fa-heart hover-blue"></i>
+                            <span class="hover-color">3:11</span>
+                        </span>
+                            
+                        
+                    </div>
+
+                </div>
+                <div class="row song-row a-center title">
+                    <div class="number">
+                        <span>1</span>
+
+                    </div>
+                    
+                    <div class="titolo row a-center col ">
+                        <img src="./assets/img/illusion.jpg" alt="">
+
+                        <div class="arts sub-title">
+                            <span class="hover-color">
+                            Live and Let Die
+                        </span>  <br>
+                            <span class="hover-color">
+                                Guns N' Roses
+                            </span>
+                           
+
+                        </div>
+
+                    </div>
+
+                    <div class="album sub-title col">
+                        
+                        <span class="hover-color">Use Your Illusion 1</span>
+                    </div>
+                    <div class="date sub-title col">
+                        <span class="hover-color">2 days ago</span>
+                    </div>
+                    <div class="time sub-title col ">
+                        <span>
+                            <i class="fa-solid fa-heart hover-blue"></i>
+                            <span class="hover-color">3:11</span>
+                        </span>
+                            
+                        
+                    </div>
+
+                </div>
+                <div class="row song-row a-center title">
+                    <div class="number">
+                        <span>1</span>
+
+                    </div>
+                    
+                    <div class="titolo row a-center col ">
+                        <img src="./assets/img/illusion.jpg" alt="">
+
+                        <div class="arts sub-title">
+                            <span class="hover-color">
+                            Live and Let Die
+                        </span>  <br>
+                            <span class="hover-color">
+                                Guns N' Roses
+                            </span>
+                           
+
+                        </div>
+
+                    </div>
+
+                    <div class="album sub-title col">
+                        
+                        <span class="hover-color">Use Your Illusion 1</span>
+                    </div>
+                    <div class="date sub-title col">
+                        <span class="hover-color">2 days ago</span>
+                    </div>
+                    <div class="time sub-title col ">
+                        <span>
+                            <i class="fa-solid fa-heart hover-blue"></i>
+                            <span class="hover-color">3:11</span>
+                        </span>
+                            
+                        
+                    </div>
+
+                </div>
+                <div class="row song-row a-center title">
+                    <div class="number">
+                        <span>1</span>
+
+                    </div>
+                    
+                    <div class="titolo row a-center col ">
+                        <img src="./assets/img/illusion.jpg" alt="">
+
+                        <div class="arts sub-title">
+                            <span class="hover-color">
+                            Live and Let Die
+                        </span>  <br>
+                            <span class="hover-color">
+                                Guns N' Roses
+                            </span>
+                           
+
+                        </div>
+
+                    </div>
+
+                    <div class="album sub-title col">
+                        
+                        <span class="hover-color">Use Your Illusion 1</span>
+                    </div>
+                    <div class="date sub-title col">
+                        <span class="hover-color">2 days ago</span>
+                    </div>
+                    <div class="time sub-title col ">
+                        <span>
+                            <i class="fa-solid fa-heart hover-blue"></i>
+                            <span class="hover-color">3:11</span>
+                        </span>
+                            
+                        
+                    </div>
+
+                </div>
+                <div class="row song-row a-center title">
+                    <div class="number">
+                        <span>1</span>
+
+                    </div>
+                    
+                    <div class="titolo row a-center col ">
+                        <img src="./assets/img/illusion.jpg" alt="">
+
+                        <div class="arts sub-title">
+                            <span class="hover-color">
+                            Live and Let Die
+                        </span>  <br>
+                            <span class="hover-color">
+                                Guns N' Roses
+                            </span>
+                           
+
+                        </div>
+
+                    </div>
+
+                    <div class="album sub-title col">
+                        
+                        <span class="hover-color">Use Your Illusion 1</span>
+                    </div>
+                    <div class="date sub-title col">
+                        <span class="hover-color">2 days ago</span>
+                    </div>
+                    <div class="time sub-title col ">
+                        <span>
+                            <i class="fa-solid fa-heart hover-blue"></i>
+                            <span class="hover-color">3:11</span>
+                        </span>
+                            
+                        
+                    </div>
+
+                </div>
+                
+
+
+
+
+            </div>
         </main>
         <!-- /display -->
-
-
-        
 
     </div>
     <!-- /#main_site -->
@@ -236,6 +673,7 @@
     </footer>
     <!-- /#footer_site -->
 
-    
+
 </body>
+
 </html>
