@@ -22,43 +22,58 @@
 
         <aside class="sidebar sub-title">
 
-            <div class="btn-bar">
-                <div class="logo">
-                    <img src="./assets/img/logo.svg" alt="spotify logo">
-                </div>
-                <div class="logo hidden">
-                    <i class="fa-brands fa-spotify fa-2x title"></i>
-                </div>
+            <ul class="btn-bar">
 
-                <div class="home side-flex hover-color">
+                <li class="logo">
+                    <a href="">
+                        <img src="./assets/img/logo.svg" alt="spotify logo">
+                    </a>
+                </li>
+                <li class="logo hidden">
+                    <a href="">
+                        <i class="fa-brands fa-spotify fa-2x title"></i>
+                    </a>
 
-                    <img id="home" src="./assets/img/home.svg" alt="homepage">
-                    <span>
-                        Home
-                    </span>
+                </li>
+                <!-- /logo -->
 
-                </div>
+                <li class="home hover-color">
 
-                <div class="search side-flex hover-color">
-                    <img id="search" src="./assets/img/search.svg" alt="search">
-                    <span>
-                        Cerca
-                    </span>
+                    <a class="side-flex sub-title hover-color" href="">
+                        <img id="home" src="./assets/img/home.svg" alt="homepage">
+                        <span>Home</span>
 
-                </div>
-                <div id="library" class="library side-flex hover-color">
-                    <img id="library" src="./assets/img/libreria.svg" alt="library">
-                    <span>
-                        Libreria
-                    </span>
-                </div>
+                    </a>
 
-                <div class="side-flex playlist">
-                    <h3 class="title">Playlist</h3>
-                </div>
+                </li>
+
+                <li class="search ">
+                    <a class="side-flex sub-title hover-color" href="">
+                        <img id="search" src="./assets/img/search.svg" alt="search">
+                        <span>
+                            Cerca
+                        </span>
+                    </a>
 
 
-                <div class="new-playlist side-flex hover-color">
+                </li>
+
+                <li class="library side-flex hover-color">
+                    <a class="side-flex sub-title hover-color" href="">
+                        <img id="library" src="./assets/img/libreria.svg" alt="library">
+                        <span>
+                            Libreria
+                        </span>
+                    </a>
+
+                </li>
+            </ul>
+
+            <ul class="playlist">
+
+                <h3 class="title">Playlist</h3>
+                
+                <li class="new-playlist side-flex hover-color">
                     <div class="plus">
                         <i class="fa-solid fa-plus fa-lg"></i>
                     </div>
@@ -66,39 +81,42 @@
                         Crea Playlist
                     </span>
 
-                </div>
+                </li>
 
-            </div>
+                <li class="side-flex">
+                    <ul class="playlists">
+                        <li class="name-playlist">
+                            <a class="hover-color" href="">Nome playlist </a>
+                        </li>
+                        <li class="name-playlist">
+                            <a class="hover-color" href="">Nome playlist </a>
+                        </li>
+                        <li class="name-playlist">
+                            <a class="hover-color" href="">Nome playlist </a>
+                        </li>
+                        <li class="name-playlist">
+                            <a class="hover-color" href="">Nome playlist </a>
+                        </li>
+                        <li class="name-playlist">
+                            <a class="hover-color" href="">Nome playlist </a>
+                        </li>
+                        <li class="name-playlist">
+                            <a class="hover-color" href="">Nome playlist </a>
+                        </li>
+                        <li class="name-playlist">
+                            <a class="hover-color" href="">Nome playlist </a>
+                        </li>
 
-            <div class="playlists">
-                <div class="name-playlist hover-color">
-                    Nome playlist
-                </div>
-                <div class="name-playlist hover-color">
-                    Nome playlist
-                </div>
-                <div class="name-playlist hover-color">
-                    Nome playlist
-                </div>
-                <div class="name-playlist hover-color">
-                    Nome playlist
-                </div>
-                <div class="name-playlist hover-color">
-                    Nome playlist
-                </div>
-                <div class="name-playlist hover-color">
-                    Nome playlist
-                </div>
-                <div class="name-playlist hover-color">
-                    Nome playlist
-                </div>
+                    </ul>
 
-            </div>
+                </li>
+
+
+            </ul>
+
 
 
             <!-- /playlist section -->
-
-
 
             <div class="user-box">
                 <div class="app-down side-flex hover-color">
@@ -300,13 +318,10 @@
 
             </div>
 
-
-
         </main>
         <!-- /display -->
+
     </div>
-
-
     <!-- /#main_site -->
 
     <footer id="footer_site" class="btm-bar">
@@ -365,7 +380,7 @@
             <i class="fa-solid fa-list"></i>
             <i class="fa-solid fa-desktop"></i>
             <i class="fa-solid fa-volume-high"></i>
-            <div class="slider play-slider p-rel">
+            <div class="slider vol-slider p-rel">
                 <div class="slider light-slider">
                     <div class="point-box pos-rel">
                         <div class="point-slider">

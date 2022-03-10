@@ -19,14 +19,24 @@
     box-sizing: border-box;
 }
 
-img {
-    max-width: 100%;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
     font-size: smaller;
+}
+
+
+img {
+    max-width: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul,li{
+    text-decoration: none;
+    list-style: none;
 }
 
 /* Utility */
@@ -42,7 +52,6 @@ body {
 .t-lighter {
     color: var(--text-lighter);
 }
-
 
 .slider {
     height: 5px;
@@ -60,9 +69,27 @@ body {
     border-radius: 50%;
 }
 
+.side-flex {
+    display: flex;
+    align-items: center;
+    row-gap: 1rem;
+    margin-top: 0.5rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.slider {
+    height: 5px;
+    border-radius: 3px;
+}
+
 div[class$="hover-color"]:hover,
 span[class$="hover-color"]:hover,
-li[class$="hover-color"]:hover {
+li[class$="hover-color"]:hover,
+a[class$="hover-color"]:hover
+ {
     color: var(--text-hover);
 }
 
@@ -95,12 +122,6 @@ li[class$="hover-color"]:hover {
     animation: boing 2s;
 }
 
-.logo>img {
-    width: 130px;
-
-
-}
-
 @keyframes boing {
 
     15%,
@@ -127,34 +148,27 @@ li[class$="hover-color"]:hover {
     }
 }
 
-.hidden {
-    display: none;
+.logo>img {
+    width: 130px;
 }
 
-.side-flex {
-    display: flex;
-    align-items: center;
-    row-gap: 1rem;
-    margin-top: 0.5rem;
-}
-
-.side-flex>img {
+#home,
+#search,
+#library {
     width: 2rem;
     margin-right: 0.5rem;
     filter: brightness(0.5);
 }
 
-.btn-bar>.side-flex>h3 {
-    padding: 1rem 0;
-}
-
 .home:hover #home,
 .search:hover #search,
 .library:hover #library {
-    filter: none !important;
+    filter: none;
 }
 
-
+.btn-bar>.side-flex>h3 {
+    padding: 1rem 0;
+}
 
 /* PLaylist */
 .playlist {
@@ -176,6 +190,10 @@ li[class$="hover-color"]:hover {
 .playlists {
     flex-grow: 1;
     overflow-y: auto;
+}
+
+.name-playlist>a {
+    color: var(--text-primary);
 }
 
 .name-playlist {
@@ -296,42 +314,26 @@ li[class$="hover-color"]:hover {
     text-align: center;
 }
 
-.card:hover .card-cover{
-    animation: zoom 1s;
-    
-}
+.card:hover .card-cover {
+    transition: 1s;
+    transform: scale(1.1);
+    transform-origin: center center;
 
-@keyframes zoom {
-    50%{
-        transform: scale(1.1);
-        transform-origin: center center;
-    }
-    
 }
 
 .card:hover .card-text>span {
-    animation: select-card 1s;
-    
-}
-
-
-@keyframes select-card {
-
-    50% {
-        border-bottom: solid thin var(--text-lighter);
-        font-size: 1rem;
-        color: var(--text-secondary);
-
-    }
+    transition: 1s;
+    border-bottom: solid thin var(--text-lighter);
+    font-size: 1rem;
+    color: var(--text-secondary);
 
 }
+
 
 .card-cover>img {
     width: 100%;
 
 }
-
-
 
 .card-text {
     line-height: 1.5rem;
@@ -348,7 +350,7 @@ li[class$="hover-color"]:hover {
 
 .card:hover .play-input {
     visibility: visible;
-    animation: selection 1s;
+    animation: selection 2s infinite;
 }
 
 
@@ -356,8 +358,8 @@ li[class$="hover-color"]:hover {
     0% {}
 
     50% {
-        font-size: 1rem;
-        color: green;
+        font-size: 0.8rem;
+        color: rgb(166, 255, 166);
     }
 
     100% {}
@@ -424,9 +426,6 @@ li[class$="hover-color"]:hover {
     align-items: center;
     flex-wrap: wrap;
     width: 40%;
-
-
-
 }
 
 .controls,
@@ -438,8 +437,6 @@ li[class$="hover-color"]:hover {
     justify-content: center;
     height: 30px;
 }
-
-
 
 .col-left>div,
 .controls>i,
@@ -472,6 +469,11 @@ li[class$="hover-color"]:hover {
 
 .play-slider {
     width: 50%;
+    background-color: var(--text-primary);
+}
+
+.vol-slider {
+    width: 30%;
     background-color: var(--text-primary);
 }
 
@@ -510,16 +512,11 @@ li[class$="hover-color"]:hover {
 }
 
 
-.slider {
-    height: 5px;
-    border-radius: 3px;
-}
-
 /* #endregion Footer */
 
 
 /* Mediaquery */
-@media screen and (max-width: 1440px) {}
+@media screen and (max-width: 1440px) and (min-height:50%) {}
 
 
 /* laptop */
@@ -600,5 +597,14 @@ li[class$="hover-color"]:hover {
     .col-center{
         width: calc(100% - 140px);
     } */
+
+}
+
+@media screen and (max-width: 320px) {
+
+    .card {
+        width: calc(100% / 1);
+    }
+
 
 }
