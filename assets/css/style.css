@@ -563,7 +563,6 @@ a[class$="hover-color"]:hover {
     }
 
     .container-display {
-        flex-wrap: nowrap;
         overflow-x: auto;
     }
 
