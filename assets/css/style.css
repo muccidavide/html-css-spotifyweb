@@ -547,7 +547,7 @@ a[class$="hover-color"]:hover {
 
     .sidebar {
         width: 180px;
-        transition: 1s;
+        transition: width 1s;
     }
 
     .display {
@@ -678,13 +678,36 @@ BONUS BONUS BONUS
 }
 
 .banner {
-    height: 310px;
+    height: 20vh;
+    max-height: 300px;
 }
 
 .banner>img {
     width: 100%;
     object-fit: cover;
-    max-height: -webkit-fill-available;
+    max-height:100%;
+    animation: col-filter 10s infinite;
+    transition: animation 3s ;
+    
+}
+
+@keyframes col-filter {
+    0%{
+        filter: initial;
+    }
+
+    25%{
+        filter: hue-rotate(90deg);
+    }
+    50%{
+        filter: hue-rotate(180deg);
+    }
+    75%{
+        filter: hue-rotate(270deg);
+    }
+    100%{
+        filter: hue-rotate(360deg);
+    }
 }
 
 .row {
@@ -744,7 +767,6 @@ BONUS BONUS BONUS
 
 .number {
     width: 2%;
-
 }
 
 .titolo > img{
